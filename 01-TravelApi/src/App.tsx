@@ -1,10 +1,13 @@
-/* eslint-disable react/react-in-jsx-scope */
-// import * as React from 'react';
+import { MantineProvider } from '@mantine/core';
 
 import { Home } from 'pages/Home';
 
 function App() {
-  return <Home />;
+  return (
+    <MantineProvider>
+      <Home />
+    </MantineProvider>
+  );
 }
 
 export default App;
