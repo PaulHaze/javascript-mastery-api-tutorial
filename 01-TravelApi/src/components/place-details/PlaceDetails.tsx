@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './PlaceStyles.scss';
 
 export function PlaceDetails() {
   return (

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './MapStyles.scss';
 
 export function Map() {
   return (
