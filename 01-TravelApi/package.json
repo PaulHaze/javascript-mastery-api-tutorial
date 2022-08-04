@@ -1,5 +1,5 @@
 {
-  "name": "cra-ts-testing-husky",
+  "name": "travel-api",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "npx cypress run",
-    "prepare": "husky install"
+    "e2e": "npx cypress run"
   },
   "browserslist": {
     "production": [
@@ -35,6 +34,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.16.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.4.1",

@@ -1,5 +1,5 @@
-# Getting Started with Create React App
+# Travel Api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get started run 'yarn' in the 01-TravelApi directory to install dependencies.
+Then run yarn start to start the project
 
-# Test COmmit
