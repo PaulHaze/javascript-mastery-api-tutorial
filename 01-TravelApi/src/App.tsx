@@ -1,10 +1,12 @@
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, createEmotionCache } from '@mantine/core';
 
 import { Home } from 'pages/Home';
 
+const myCache = createEmotionCache({ key: 'mantine', prepend: false });
+
 function App() {
   return (
-    <MantineProvider>
+    <MantineProvider emotionCache={myCache}>
       <Home />
     </MantineProvider>
   );
