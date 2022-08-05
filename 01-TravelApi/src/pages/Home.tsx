@@ -1,14 +1,21 @@
-import { Header, List, Map, PlaceDetails } from 'components';
+import { Header, List, Map } from 'components';
 
 export function Home() {
   return (
-    <div className="h-[100vh] bg-gradient-to-br from-teal-700/50 to-sky-500/50 flex items-center justify-center p-md">
-      <div className="flex flex-col bg-white rounded-lg shadow-2xl p-10">
-        <Header />
-        <List />
-        <Map />
-        <PlaceDetails />
+    <>
+      <Header />
+      <div className="grid grid-cols-12 gap-1 px-2 md:px-10">
+        <div className="col-span-12 md:col-span-4">
+          <div className="w-full p-10 bb">
+            <List />
+          </div>
+        </div>
+        <div className="col-span-12 md:col-span-8">
+          <div className="w-full p-10 bb">
+            <Map />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
