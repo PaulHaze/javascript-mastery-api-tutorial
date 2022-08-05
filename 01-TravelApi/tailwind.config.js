@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -22,6 +25,10 @@ module.exports = {
       center: true,
     },
     extend: {
+      fontFamily: {
+        sans: ['Lato', ...defaultTheme.fontFamily.sans],
+        title: ['Lobster'],
+      },
       minWidth: {
         ssm: '415px',
         sm: '640px',
